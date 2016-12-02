@@ -1,7 +1,15 @@
-<p>Definitions</p>
+<div class="inner cover">
+  <h2>Definitions</h2>
+  <ul>
+    <% @def.each() do |definition| %>
+      <h3><li><%= definition.def() %></li></h3>
+    <% end %>
+  </ul>
+</br>
+</br>
+</br>
 
-<ul>
-  <% @def.each() do |definition| %>
-    <li><%= definition.def() %></li>
-  <% end %>
-</ul>
+<a href="/words"><button type="button" name="button" class="btn btn-lg btn-danger"></button><h4>previous</h4></a>
+<a href="/"><button type="button" name="button" class="btn btn-lg btn-default"></button><h4>Home</h4></a>
+
+</div>

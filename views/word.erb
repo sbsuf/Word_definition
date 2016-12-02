@@ -1,2 +1,10 @@
-<h1><%= @word.word() %></h1>
-<a href="/words/<%= @word.id %>/definitions/new">Add a definition to the word</a>
+<div class="inner cover">
+  <h1><%= @word.word() %></h1>
+  <a href="/words/<%= @word.id %>/definitions/new"><h3>Add a definition to the word</h3></a>
+  </br>
+  </br>
+  </br>
+
+  <a href="/words"><button type="button" name="button" class="btn btn-lg btn-danger"></button><h4>previous</h4></a>
+  <a href="/"><button type="button" name="button" class="btn btn-lg btn-default"></button><h4>Home</h4></a>
+</div>
